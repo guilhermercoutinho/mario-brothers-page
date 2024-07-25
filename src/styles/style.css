@@ -56,6 +56,7 @@ button:active {
 
 .imagem-mario-luigi {
   width: 50%;
+  max-width: 500px;
 }
 
 .mascara-formulario {
@@ -93,6 +94,7 @@ input {
   border: 1px solid gray;
   padding-left: 5px;
   outline-color: #18d80f;
+  text-shadow: none;
 }
 
 textarea {
@@ -102,6 +104,7 @@ textarea {
   border: 1px solid gray;
   padding-left: 5px;
   outline-color: #18d80f;
+  text-shadow: none;
 }
 
 .caixa-video {
@@ -174,20 +177,6 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .header img {
-    display: none;
-  }
-
-  .header a {
-    font-size: 20px;
-  }
-
   .main-box {
     flex-direction: column;
     margin-top: 1rem;
