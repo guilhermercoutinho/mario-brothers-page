@@ -1,60 +1,85 @@
+li p,
+.know-more p,
+i,
+h4 {
+  text-shadow: none;
+}
+
 .main-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 h3 {
-    color: #eeececb2 !important;
-    text-align: center;
-    padding-bottom: 10px;
-    line-height: 1em;
-    font-weight: 500;
-    text-shadow: 2px 2px black;
+  color: #eeececb2;
+  text-align: center;
+  padding-bottom: 10px;
+  line-height: 1em;
+  font-weight: 500;
 }
 
 h2 {
-    font-weight: 700;
-    font-size: 32px;
-    color: #c51111 !important;
-    text-shadow: 2px 2px black;
-    line-height: 0.8em;
-    text-align: center;
-    margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #c51111;
+  line-height: 0.8em;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .services {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 20px;
 }
 
 li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    gap: 20px;
-    background-color: #eeececb2;
-    border: 3px solid #c51111;
-    border-radius: 10px;
-    list-style: none;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  gap: 20px;
+  background-color: #eeececb2;
+  border: 3px solid #c51111;
+  border-radius: 10px;
+  list-style: none;
+  cursor: pointer;
 }
 
 li > img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 li > p {
-    text-shadow: none;
-    font-weight: 500;
-    font-size: 18px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 li:hover {
-    color: #c51111;
+  color: #c51111;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.know-more {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: white;
+  width: 300px;
+  margin: 0 auto 70%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.know-more p {
+    margin-bottom: 15px;
 }
