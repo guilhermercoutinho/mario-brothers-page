@@ -1,4 +1,4 @@
-<img src="./src/assets/mockup.png">
+<img src="./assets/mockup.png">
 <div align=center>
 <h1>Mario Brother's</h1>
 </div>
