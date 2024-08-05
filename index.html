@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ca497efa11.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
@@ -12,13 +13,13 @@
     <title>Mario Brother's</title>
   </head>
 
-  <body>
+  <div>
     <div class="container">
       <hearder class="header">
         <img src="./assets/logo-header.png" alt="logo mario" />
         <a href="./index.html">Home</a>
-        <a>Nossos Serviços</a>
-        <a>Fale Conosco</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
       </hearder>
 
       <main class="main-box">
@@ -69,20 +70,83 @@
         ></textarea>
         <button type="submit">Pedir Orçamento</button>
       </form>
+
+      <section class="servicos" id="servicos">
+        <div class="title-services">
+          <h3>Principais</h3>
+          <h2>Serviços</h2>
+        </div>
+        
+        <div class="container-services">
+            <div class="servico">
+                <img src="./assets/hidraulica.png" alt="hidraulica">
+                <h3>Hidráulica</h3>
+                <p>Descrição detalhada do Serviço 1. Explicação sobre o que é oferecido e como pode ajudar o cliente.</p>
+            </div>
+            <div class="servico">
+                <img src="./assets/eletrica.png" alt="eletrica">
+                <h3>Elétrica</h3>
+                <p>Descrição detalhada do Serviço 2. Explicação sobre o que é oferecido e como pode ajudar o cliente.</p>
+            </div>
+            <div class="servico">
+                <img src="./assets/desentupimento.png" alt="desentupimento">
+                <h3>Serviço 3</h3>
+                <p>Descrição detalhada do Serviço 3. Explicação sobre o que é oferecido e como pode ajudar o cliente.</p>
+            </div>
+        </div>
+    </section>
+
+      <div class="caixa-video">
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+      </div>
+  
+      <a
+        href="https://api.whatsapp.com/send?phone=5514981820602&text=Ol%C3%A1,%20quero%20ajuda%20dos%20irm%C3%A3os%20M%C3%A1rio"
+        target="_blank"
+        class="link-whatsapp"
+      >
+        <img src="./assets/whatsapp.png" alt="link para o whatsapp" />
+      </a>
+      
+      <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1>Minha Empresa</h1>
+                <p>Informações sobre a empresa, missão e visão.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contato</h2>
+                <p>Telefone: (14) 98182-0602</p>
+                <p>Email: guilhermecoutinho.rc@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/guilherme-rcoutinho/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/guilhermercoutinho" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/guilherme._coutinho/ " target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Guilherme Coutinho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     </div>
 
-    <div class="caixa-video">
-      <video src="./assets/video.mp4" autoplay muted loop></video>
-      <div class="mascara"></div>
-    </div>
-
-    <a
-      href="https://api.whatsapp.com/send?phone=5514981820602&text=Ol%C3%A1,%20quero%20ajuda%20dos%20irm%C3%A3os%20M%C3%A1rio"
-      target="_blank"
-      class="link-whatsapp"
-    >
-      <img src="./assets/whatsapp.png" alt="link para o whatsapp" />
-    </a>
+    
   </body>
   <script src="script.js"></script>
 </html>

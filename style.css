@@ -8,6 +8,11 @@
   text-shadow: 2px 2px black;
 }
 
+:root {
+  --mario: #c51111;
+  --luigi: #059301;
+}
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -34,7 +39,7 @@
 }
 
 .header a:hover {
-  color: #c51111;
+  color: var(--mario);
   transition: 0.5s ease-in-out;
 }
 
@@ -76,7 +81,7 @@ button {
   width: 200px;
   height: 50px;
   color: white;
-  background-color: #c51111;
+  background-color: var(--mario);
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -147,6 +152,73 @@ textarea {
   text-shadow: none;
 }
 
+.title-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem;
+}
+
+.title-services h3 {
+  color: #95A5A6;
+  font-size: 1.5rem;
+}
+
+.title-services h2 {
+  color: var(--mario);
+  font-size: 2.5rem;
+}
+
+.servicos {
+  background-color: transparent;
+  margin-bottom: 4rem;
+}
+
+.container-services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.servico {
+  background: #ffffff7e;
+  border: 2px solid #ddd; /* Borda ao redor do serviço */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Sombra mais pronunciada */
+  width: 23%;
+  margin: 0.62rem;
+  text-align: center;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para animação */
+  cursor: pointer;
+}
+
+.servico:hover {
+  transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Sombra mais forte ao passar o mouse */
+}
+
+.servico img {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #ddd; /* Borda ao redor da imagem */
+  text-shadow:none;
+}
+
+.servico h3 {
+  margin: 15px 0 10px;
+  font-size: 1.5em;
+  color: var(--mario);
+}
+
+.servico p {
+  font-size: 1em;
+  color: #fff;
+}
+
 .caixa-video {
   position: fixed;
   top: 0;
@@ -173,6 +245,83 @@ video {
   position: fixed;
   right: 20px;
   bottom: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: transparent;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;  
+  z-index: -1;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h1, .footer-section h2 {
+  margin-top: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+  color: var(--mario); /* Cor azul do LinkedIn */
+  transform: scale(1.1);
+}
+
+.social-icon:active {
+  color: var(--luigi); /* Cor escura do LinkedIn */
+  transform: scale(1);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -202,5 +351,9 @@ video {
 
   .imagem-mario-luigi {
     margin-top: 30px;
+  }
+
+  .servico {
+    width: 30%;
   }
 }
