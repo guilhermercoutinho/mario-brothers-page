@@ -17,12 +17,12 @@
     <div class="container">
       <hearder class="header">
         <img src="./assets/logo-header.png" alt="logo mario" />
-        <a href="./index.html">Home</a>
+        <a href="#home">Home</a>
         <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
+        <a href="#contato" onclick="mostrarForm()">Contato</a>
       </hearder>
 
-      <main class="main-box">
+      <main class="main-box" id="home">
         <div class="main-content">
           <img
             src="./assets/logo.png"
@@ -118,9 +118,9 @@
             <div class="footer-section links">
                 <h2>Links Úteis</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#" onclick="mostrarForm()">Contato</a></li>
                 </ul>
             </div>
             <div class="footer-section contact">
@@ -144,6 +144,8 @@
             <p>&copy; 2024 Guilherme Coutinho. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <button id="back-to-top" title="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
     </div>
 
     

@@ -11,6 +11,7 @@ Seu design foi planejado para dispositivos desktops quanto para dispositivos mó
 ## ⚙ Funcionalidades
 
 Na página Home, ao clicar no botão Entrar em contato, é aberto um pequeno formulário com nome, telefone e o problema a ser resolvido. Ao clicar no botão Pedir Orçamento, é encaminhado um email para o prestador de serviço solicitando o orçamento digitado. Há também um contato rápido a partir do ícone do WhatsApp que fica no canto inferior direito.
+O layout da página foi finalizado com espaços para adicionar serviços e um rodapé para maiores informações.
 
 ## 🖥 Tecnologias
 

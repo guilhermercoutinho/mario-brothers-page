@@ -8,6 +8,10 @@
   text-shadow: 2px 2px black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --mario: #c51111;
   --luigi: #059301;
@@ -102,6 +106,7 @@ button:active {
 .imagem-mario-luigi {
   width: 50%;
   max-width: 500px;
+  min-width: 350px;
 }
 
 .mask-form {
@@ -171,7 +176,10 @@ textarea {
 
 .servicos {
   background-color: transparent;
-  margin-bottom: 4rem;
+  margin: 4rem 0;
+  padding: 0.5rem 0;
+  /* margin: 7rem;
+  padding: 3rem; */
 }
 
 .container-services {
@@ -186,6 +194,8 @@ textarea {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Sombra mais pronunciada */
   width: 23%;
+  max-width: 450px;
+  min-width: 250px;
   margin: 0.62rem;
   text-align: center;
   padding: 1.25rem;
@@ -245,6 +255,26 @@ video {
   position: fixed;
   right: 20px;
   bottom: 20px;
+}
+
+#back-to-top {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 100px;
+  right: 20px;
+  background-color: var(--mario);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none; /* Inicialmente escondido */
+}
+
+#back-to-top:hover {
+  background-color: var(--luigi);
 }
 
 footer {
